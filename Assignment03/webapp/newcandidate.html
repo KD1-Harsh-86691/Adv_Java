@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidate Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFC0CB;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form-container {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 100%;
+            max-width: 400px;
+            box-sizing: border-box;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-container p {
+            font-size: 12px;
+            color: #777;
+            text-align: center;
+        }
+    </style>
+</head>
+<body style="background-color: pink">
+
+    <div class="form-container">
+        <h2>Candidate Registration</h2>
+        <form action="candidateregister" method="POST">
+            <!-- Candidate Name -->
+            <div class="form-group">
+                <label for="name">Candidate Name:</label>
+                <input type="text" id="candidatename" name="candidatename" required placeholder="Enter candidate's name">
+            </div>
+
+            <!-- Party Name -->
+            <div class="form-group">
+                <label for="party">Party Name:</label>
+                <input type="text" id="candidateparty" name="candidateparty" required placeholder="Enter party name">
+            </div>
+
+            <!-- Votes -->
+            <div class="form-group">
+                <label for="votes">Votes Received:</label>
+                <input type="number" id="votes" name="votes" required placeholder="Enter number of votes" min="0">
+            </div>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Register Candidate">
+        </form>
+
+    </div>
+
+</body>
+</html>
