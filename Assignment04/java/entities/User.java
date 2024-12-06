@@ -1,9 +1,3 @@
-/**
- * Course: Advanced Computing (DAC) @ Sunbeam Infotech
- * Author: Nilesh Ghule <nilesh@sunbeaminfo.com>
- * Date: Nov 5, 2024
- */
-
 package com.sunbeam.entities;
 
 import java.sql.Date;
